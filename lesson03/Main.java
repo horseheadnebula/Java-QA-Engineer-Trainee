@@ -1,5 +1,3 @@
-
-
 public class Main {
     public static void main(String[] args) {
         Employee[] employeeArray = new Employee[5];
@@ -12,6 +10,17 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             employeeArray[i].getEmployeeInfo();
         }
+
+
+        Park park1 = new Park("Super Nintendo World", "Япония", "Medium");
+        Park park2 = new Park("Warner Bros. Studio Tour London - The Making of Harry Potter", "Лондон", "Large");
+
+        Park.Attraction attraction1 = park1.new Attraction("Mario kart: Koopa's challenge", "10:00 - 19:00", 9.99);
+        Park.Attraction attraction2 = park2.new Attraction("The Great Hall", "10:00 - 19:00", 4.99);
+
+        park1.getParkInfo();
+        attraction1.getAttractionInfo();
+        park2.getParkInfo();
+        attraction2.getAttractionInfo();
     }
 }
-
